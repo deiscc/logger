@@ -9,11 +9,11 @@ GO_PACKAGES = storage log weblog
 GO_PACKAGES_REPO_PATH = $(addprefix $(REPO_PATH)/,$(GO_PACKAGES))
 
 # the filepath to this repository, relative to $GOPATH/src
-REPO_PATH = github.com/deis/logger
+REPO_PATH = github.com/deiscc/logger
 
 # The following variables describe the containerized development environment
 # and other build options
-DEV_ENV_IMAGE := quay.io/deis/go-dev:0.20.0
+DEV_ENV_IMAGE := deiscc/go-dev
 DEV_ENV_WORK_DIR := /go/src/${REPO_PATH}
 DEV_ENV_OPTS := --rm -v ${CURDIR}:${DEV_ENV_WORK_DIR} -w ${DEV_ENV_WORK_DIR}
 DEV_ENV_CMD := docker run ${DEV_ENV_OPTS} ${DEV_ENV_IMAGE}
@@ -26,7 +26,7 @@ DOCKER_HOST = $(shell echo $$DOCKER_HOST)
 BUILD_TAG ?= git-$(shell git rev-parse --short HEAD)
 SHORT_NAME ?= logger
 DEIS_REGISTRY ?= ${DEV_REGISTRY}
-IMAGE_PREFIX ?= deis
+IMAGE_PREFIX ?= deiscc
 
 include versioning.mk
 

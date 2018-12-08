@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/deis/logger/storage"
+	"github.com/deiscc/logger/storage"
 )
 
 const (

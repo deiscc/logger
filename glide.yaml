@@ -1,4 +1,4 @@
-package: github.com/deis/logger
+package: github.com/deiscc/logger
 import:
 - package: github.com/gorilla/mux
 - package: github.com/gorilla/context

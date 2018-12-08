@@ -5,7 +5,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/deis/logger/storage"
+	"github.com/deiscc/logger/storage"
 )
 
 const (

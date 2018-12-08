@@ -9,7 +9,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/deis/logger/storage"
+	"github.com/deiscc/logger/storage"
 )
 
 type requestHandler struct {

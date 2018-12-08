@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/deis/logger/storage"
+	"github.com/deiscc/logger/storage"
 	"github.com/stretchr/testify/assert"
 )
 
